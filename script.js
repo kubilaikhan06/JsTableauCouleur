@@ -5,7 +5,7 @@ function dessiner(){
     ecran.innerHTML = makeTable(rows, cols);
 
 }
-var color = 'blue';
+var color = '';
 function makeTable(r, c){
     var table = "<table border='1' >";
     for (var i = 0; i<r ; i++){
@@ -13,7 +13,7 @@ function makeTable(r, c){
         for (var j=0; j<c; j++){
             //table += "<td>"+i+","+j+"</td>";
 
-            table+= "<td onmouseover='colorer(this, event)'></td>";
+            table+= "<td onmousedown='colorer(this, event)'></td>";
         }
         table+= "</tr>";
     }
