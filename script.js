@@ -13,7 +13,7 @@ function makeTable(r, c){
         for (var j=0; j<c; j++){
             //table += "<td>"+i+","+j+"</td>";
 
-            table+= "<td onmousedown='colorer(this, event)'></td>";
+            table+= "<td onclick='colorer(this, event)'></td>";
         }
         table+= "</tr>";
     }
